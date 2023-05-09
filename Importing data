@@ -1,0 +1,13 @@
+import pandas as pd
+import os
+
+server_path = '//ennyccifs01/Jobs2/NYCDOT ESA TO14 Driver Behavior/Driver Behavior/Data/'
+
+#All Fatal Data
+
+Fatal_Crash = pd.read_csv(server_path+'Fatality/Fatal_Crash.csv', low_memory = False)
+Fatal_Geography = pd.read_csv(server_path+'Fatality/Fatal_Geography.csv', low_memory = False)
+Fatal_Vehicle = pd.read_csv(server_path+'Fatality/Fatal_Vehicle.csv', low_memory = False)
+Fatal_Victim = pd.read_csv(server_path+'Fatality/Fatal_Victim.csv', low_memory = False)
+
+VDATA1 = pd.read_csv(server_path+'VDATA1.csv', low_memory = False)
